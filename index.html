@@ -718,7 +718,7 @@
             // Tải ảnh 
             const checkmark = new Image();
             checkmark.crossOrigin = "anonymous"; 
-            checkmark.src = "watermark/checkmark.png"
+            checkmark.src = "/watermark/checkmark.png"
               await new Promise((resolve, reject) => {
                 checkmark.onload = resolve;
                 checkmark.onerror = () => reject('Không thể tải checkmark.png');
@@ -807,3 +807,4 @@
 
 
 </html>
+

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Watermark</title>
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/watermark/manifest.json">
     
-    <link rel="icon" href="/icon.png">
+    <link rel="icon" href="/watermark/icon.png">
     <meta name="theme-color" content="#667eea">
     
     <style>
@@ -718,7 +718,7 @@
             // Tải ảnh 
             const checkmark = new Image();
             checkmark.crossOrigin = "anonymous"; 
-            checkmark.src = "/checkmark.png"
+            checkmark.src = "watermark/checkmark.png"
               await new Promise((resolve, reject) => {
                 checkmark.onload = resolve;
                 checkmark.onerror = () => reject('Không thể tải checkmark.png');
@@ -804,5 +804,6 @@
         });
     </script>
 </body>
+
 
 </html>
